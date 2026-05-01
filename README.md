@@ -97,6 +97,23 @@ HAVING COUNT(*) > 1;
 
 ## Análisis Exploratorio de Datos (EDA) e Insights
 
+1. **Antigüedad:** ¿Cuál es el promedio de antigüedad de los empleados en cada departamento?
+- implementando funciones de agrgacion que el departamento de tecnologia tiene maytor tiempo de permanencia a comparacion de otros departamentos
+```sql
+SELECT Department
+		,avg(YearsAtCompany*1.0)  permanencia_promedio
+FROM Employee
+group by Department
+```
+Resultado :
+
+![HR Analytics](./Picture/P1.png)
+
+
+
+
+
+
 ### Conclusion
 
 - Este análisis proporcionó información importante sobre las áreas donde GreatPlaceToWork puede mejorar la experiencia del empleado.
